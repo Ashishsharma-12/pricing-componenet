@@ -1,0 +1,55 @@
+// https://proto.io/freebies/onoff/
+
+.price-switch {
+  position: relative;
+  width: 60px;
+  margin: 0 1.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.price-switch__checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.price-switch__label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  height: 33px;
+  padding: 0;
+  line-height: 33px;
+  border-radius: 33px;
+  background: var(--clr-gradient);
+  transition: opacity 150ms ease-in;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.price-switch__label:before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 0px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 4px;
+  bottom: 0;
+  right: 30px;
+  border-radius: 33px;
+  transition: all 150ms ease-in 0s;
+}
+
+.price-switch__checkbox:checked+.price-switch__label {
+  background: var(--clr-gradient);
+}
+
+.price-switch__checkbox:checked+.price-switch__label:before {
+  right: 5px;
+}

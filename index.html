@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+</head>
+<body>
+  <div class="header container">
+    <h2>Our Pricing</h2>
+    <div class="pricing">
+      <span>Yearly</span>
+      <div class="price-switch">
+        <input type="checkbox" name="price-switch" class="price-switch__checkbox" id="myprice-switch" tabindex="0"
+          checked>
+        <label class="price-switch__label" for="myprice-switch"></label>
+      </div>
+      <span>Monthly</span>
+    </div>
+  </div>
+  <main class="pricing-plans container">
+    <ul class="plans" id="cards">
+      <li class="card">
+        <span class="card__title">Basic</span>
+        <h3 class="card__price--annually active">&dollar;199.99</h3>
+        <h3 class="card__price--monthly">&dollar;19.99</h3>
+        <ul class="card__features">
+          <li>500 GB Storage</li>
+          <li>2 Users Allowed</li>
+          <li>Send up to 3 GB</li>
+        </ul>
+        <button class="card__btn">Learn More</button>
+      </li>
+      <li class="card featured">
+        <span class="card__title--featured">Professional</span>
+        <h3 class="card__price--annually active" id="clr-white">&dollar;249.99</h3>
+        <h3 class="card__price--monthly" id="clr-white">&dollar;24.99</h3>
+        <ul class="card__features--featured">
+          <li> 1 TB Storage</li>
+          <li>5 Users Allowed</li>
+          <li>Send up to 10 GB</li>
+        </ul>
+        <button class="card__btn--white">Learn More</button>
+      </li>
+      <li class="card">
+        <span class="card__title">Master</span>
+        <h3 class="card__price--annually active">&dollar;399.99</h3>
+        <h3 class="card__price--monthly">&dollar;39.99</h3>
+        <ul class="card__features">
+          <li>2 TB Storage</li>
+          <li>10 Users Allowed</li>
+          <li>Send up to 20 GB</li>
+        </ul>
+        <button class="card__btn">Learn More</button>
+      </li>
+    </ul>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/mattskeoch" target="_blank">Matt</a>.
+  </div>
+  <script src="/js/app.js"></script>
+</body>
+</html>
